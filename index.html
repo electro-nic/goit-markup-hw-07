@@ -56,7 +56,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button">Заказать услугу</button>
         </div>
       </section>
       <section class="advantages">
@@ -87,13 +87,28 @@
           <h2 class="title-studio">Чем мы занимаемся</h2>
           <ul class="grid list">
             <li class="grid-item gallery-item">
-              <img src="./images/box1.jpg" width="370" alt="Набор текста" />
+              <div class="service-thumb">
+                <img src="./images/box1.jpg" width="370" alt="Набор текста" />
+                <div class="service-thumb-info">
+                  <p class="service-thumb-text">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="grid-item gallery-item">
-              <img src="./images/box2.jpg" width="370" alt="ПО для телефонов" />
+              <div class="service-thumb">
+                <img src="./images/box2.jpg" width="370" alt="ПО для телефонов" />
+                <div class="service-thumb-info">
+                  <p class="service-thumb-text">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="grid-item gallery-item">
-              <img src="./images/box3.jpg" width="370" alt="ПО для планшетов" />
+              <div class="service-thumb">
+                <img src="./images/box3.jpg" width="370" alt="ПО для планшетов" />
+                <div class="service-thumb-info">
+                  <p class="service-thumb-text">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -353,5 +368,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button aria-label="Закрыть окно" class="close-button" data-modal-close>&#10005;</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
