@@ -366,11 +366,69 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <h2 class="connect">Подпишитесь на рассылку</h2>
+          <form class="subs-form" autocomplete="off">
+            <input type="email" name="email" class="email" placeholder="E-mail" />
+            <button type="submit" class="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button aria-label="Закрыть окно" class="close-button" data-modal-close>&#10005;</button>
+        <button aria-label="Закрыть окно" class="close-button" data-modal-close><b>&#10005;</b></button>
+        <form class="modal-form" autocomplete="off">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-field">
+            <label class="form-label">
+              Имя
+              <input class="form-input" type="text" name="username" />
+              <span class="icon">
+                <svg class="form-icon">
+                  <use href="./images/svg/icons.svg#icon-person-modal"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="form-field">
+            <label class="form-label">
+              Телефон
+              <input class="form-input" type="tel" name="phone_number" />
+              <span class="icon">
+                <svg class="form-icon">
+                  <use href="./images/svg/icons.svg#icon-phone-modal"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="form-field">
+            <label class="form-label">
+              Почта
+              <input class="form-input" type="email" name="email" />
+              <span class="icon">
+                <svg class="form-icon">
+                  <use href="./images/svg/icons.svg#icon-email-modal"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="form-field">
+            <label class="form-label">
+              Комментарий
+              <textarea class="form-input comment" name="comment" placeholder="Введите текст"></textarea>
+            </label>
+          </div>
+          <div class="custom-checkbox">
+            <label class="label agreement">
+              <input type="checkbox" name="agreement" class="checkbox" />
+              <span class="checkbox-icon"> </span>
+              Соглашаюсь с рассылкой и принимаю
+              <span class="agreement-link"> <a href=""> Условия договора</a></span>
+            </label>
+          </div>
+          <button type="submit" class="submit modal-submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
